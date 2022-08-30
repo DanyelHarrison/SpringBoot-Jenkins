@@ -24,7 +24,7 @@ pipeline {
 spring.h2.console.enabled=false
 spring.h2.console.path=/h2
 
-spring.datasource.url=jdbc:mysql://qa-cinema-db.co2mgc16vhu3.eu-west-2.rds.amazonaws.com:3306/tdl
+spring.datasource.url=jdbc:mysql://qa-cinema-db.co2mgc16vhu3.eu-west-2.rds.amazonaws.com:3306/qa-cinema-db
 spring.datasource.data=classpath:data-dev.sql
 spring.datasource.username=admin
 spring.datasource.password=qacadmin' > ./src/main/resources/application-dev.properties
