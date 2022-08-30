@@ -15,7 +15,7 @@ pipeline {
 		stage('SSH Build Deploy'){
 			steps{
 			sh '''
-			ssh -tt -i ~/.ssh/id_rsa jenkins@18.130.189.164 << EOF
+			ssh -i ~/.ssh/id_rsa jenkins@18.130.189.164 /bin/bash << EOF
 			rm -rf SpringBoot-Jenkins
 			git clone https://github.com/DanyelHarrison/SpringBoot-Jenkins.git
 			cd SpringBoot-Jenkins
